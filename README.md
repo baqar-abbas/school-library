@@ -47,7 +47,9 @@ RUBY
 > Key Features
 
 - Person, Student and Teacher classes has been implemented
-- Will add more classes and functionalionaties in the upcoming milestones of this project
+- Created classed ClassRoom, Book and Rental. 
+- Created associations between classes.
+- Will add more functionalionaties and ui in the upcoming milestones of this project
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
