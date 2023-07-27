@@ -49,7 +49,8 @@ RUBY
 - Person, Student and Teacher classes has been implemented
 - Created classed ClassRoom, Book and Rental. 
 - Created associations between classes.
-- Will add more functionalionaties and ui in the upcoming milestones of this project
+- Created UI for the console app using app.rb and main.rb.
+- Will add more functionalionaties and testing will be done in the upcoming milestones of this project
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
