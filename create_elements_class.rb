@@ -1,4 +1,3 @@
-# create_elements_class.rb
 require './book'
 require './person'
 require './rental'
