@@ -9,8 +9,8 @@ def main
 end
 
 def exit_app
-    puts 'Thanks for using the school library app'
-    exit
-  end
+  puts 'Thanks for using the school library app'
+  exit
+end
 
 main
