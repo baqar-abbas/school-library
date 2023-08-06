@@ -10,7 +10,7 @@ require './save_data'
 
 class App
   include SaveData
-attr_accessor :books
+# attr_accessor :books
 
   def initialize
     @books = []
