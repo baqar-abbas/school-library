@@ -5,8 +5,13 @@ require './student'
 require './teacher'
 require './list_elements_class'
 require './create_elements_class'
+require 'json'
+require './save_data'
 
 class App
+  include SaveData
+attr_accessor :books
+
   def initialize
     @books = []
     @people = []
@@ -23,7 +28,6 @@ class App
   end
 
   ## LIST PEOPLE
-
   def list_people
     @list_elements.list_people(@people) # Call the method from ListElementsClass passing @people as an argument
   end
@@ -55,6 +59,7 @@ class App
   ## CREATE A BOOK
   def create_book
     @create_elements.create_book(@books)
+    
   end
 
   ## CREATE A RENTAL

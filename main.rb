@@ -1,6 +1,9 @@
 require './app'
 require './ui'
+require './save_data'
+require './book'
 
+include SaveData
 def main
   app = App.new
   ui = UI.new(app)
@@ -9,6 +12,7 @@ def main
 end
 
 def exit_app
+  save_data
   puts 'Thanks for using the school library app'
   exit
 end
