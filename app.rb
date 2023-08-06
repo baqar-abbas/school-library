@@ -7,9 +7,11 @@ require './list_elements_class'
 require './create_elements_class'
 require 'json'
 require './save_data'
+require './load_data'
 
 class App
   include SaveData
+  include LoadData
 # attr_accessor :books
 
   def initialize
@@ -21,9 +23,16 @@ class App
     # Instantiate CreateElementsClass
   end
 
+
+
+  def data_load
+  load_data
+  end
+
   ## LIST THE BOOKS
 
   def list_books
+    # load_data
     @list_elements.list_books(@books) # Call the method from ListElementsClass passing @books as an argument
   end
 
