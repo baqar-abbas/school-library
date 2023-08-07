@@ -7,7 +7,7 @@ module LoadData
         data = JSON.parse(file)
         data.map do |book|
             # @books << Book.new(book['title'],book['author'])
-            @books << Book.from_json(book.to_json)
+            @books << Book.from_json(book)
         end
     end
     

@@ -25,14 +25,12 @@ class App
 
 
 
-  def data_load
-  load_data
-  end
+
 
   ## LIST THE BOOKS
 
   def list_books
-    # load_data
+    load_data
     @list_elements.list_books(@books) # Call the method from ListElementsClass passing @books as an argument
   end
 
