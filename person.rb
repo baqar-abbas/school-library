@@ -13,6 +13,7 @@ class Person < Nameable
     @age = age
     @parent_permission = parent_permission
     @rentals = []
+    # @student=[]
   end
 
   def add_rental(rental)
@@ -27,6 +28,14 @@ class Person < Nameable
     of_age? || @parent_permission
   end
 
+  def student_data_to_json(*arg)
+    {       
+      'type' => self.class.name,
+    'age'=> @age,
+    'name'=> @name,
+    'id'=> @id
+    }.to_json(*arg)
+  end
   private
 
   def of_age?
